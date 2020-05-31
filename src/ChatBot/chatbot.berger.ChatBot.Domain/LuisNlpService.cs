@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using chatbot.berger.ChatBot.Domain.Interfaces;
+using Microsoft.Extensions.Configuration;
 
 namespace chatbot.berger.ChatBot.Domain
 {
@@ -12,11 +13,12 @@ namespace chatbot.berger.ChatBot.Domain
         private string _key;
         private string _appId;
 
-        public LuisNlpService()
+        public LuisNlpService(IConfiguration configuration)
         {
-            _endpoint = "{url_base}";
-            _key = "{key}";
-            _appId = "{appId}";
+            _endpoint = configuration["nlp:endpoint"]; 
+            _key = configuration["nlp:key"];
+            _appId = configuration["nlp:appId"];
+
         }
 
         public async Task<string> ProcessText(string text)
