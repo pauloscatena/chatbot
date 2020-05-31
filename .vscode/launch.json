@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/ChatBot/chatbot.berger.ChatBot.Api/bin/Debug/netcoreapp3.1/chatbot.berger.ChatBot.Api.dll",
+            "program": "${workspaceFolder}/src/ChatBot/chatbot.scatena.ChatBot.Api/bin/Debug/netcoreapp3.1/chatbot.scatena.ChatBot.Api.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/ChatBot/chatbot.berger.ChatBot.Api",
+            "cwd": "${workspaceFolder}/src/ChatBot/chatbot.scatena.ChatBot.Api",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
